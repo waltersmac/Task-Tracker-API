@@ -29,7 +29,7 @@ In this project, I am developing an API that will act as the backend to the Task
     ├── README.md          <- The top-level README for developers using this project.
     ├── api                <- Flask application scripts
     ├── data               <- Hold the sqlite database
-    ├── database           <- This holds the sql_db, models, schema and the crud scripts
+    ├── core               <- This holds the sql_db, models, schema and the crud scripts
     ├── models             <- Saved images from the notebooks and flask app webpage
     │
     ├── test               <- Unit tests for the FastAPI application
