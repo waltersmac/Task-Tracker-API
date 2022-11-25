@@ -3,27 +3,7 @@
 ## Project Description
 In this project, I am developing an API that will act as the backend to the Task Tracker application. The API will be built using Python FastAPI and will have the following features: 
 
-## 1. 
-
-
-
-## 2.
-
-
-
-## 3
-
-
-
-## 4.
-
-
-
-## 5.
-
-
-
-## 6. Project Organisation
+## Project Organisation
 
     ├── Makefile           <- Makefile with commands like `make requirements`
     ├── README.md          <- The top-level README for developers using this project.
@@ -42,3 +22,4 @@ In this project, I am developing an API that will act as the backend to the Task
 
 
 ## Resources Used for This Project
+* FastAPI: [here](https://fastapi.tiangolo.com) <br>
