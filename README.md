@@ -5,16 +5,16 @@ In this project, I am developing an API that will act as the backend to the Task
 
 ## Project Organisation
 
-    ├── Makefile           <- Makefile with commands like `make requirements`
+    ├── Makefile           <- Makefile with commands like `make requirements` (To be updated)
     ├── README.md          <- The top-level README for developers using this project.
-    ├── api                <- Flask application scripts
+    ├── api                <- FastAPI application scripts (To be added)
     ├── data               <- Hold the sqlite database
     ├── core               <- This holds the sql_db, models, schema and the crud scripts
-    ├── models             <- Saved images from the notebooks and flask app webpage
+    ├── models             <- Holds the data structures i.e linked list, stack, queue, binary tree, etc (To be added)
     │
     ├── test               <- Unit tests for the FastAPI application
     │
-    ├── views              <- This holds the html templates for the FastAPI
+    ├── views              <- This holds the html templates for the FastAPI (If you want to use it as a web app)
     │
     ├── main.py            <- FastAPI entry point
     └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
