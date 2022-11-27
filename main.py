@@ -43,6 +43,11 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
     return db_user
 
 
+@app.get("/")
+def hello_tracker():
+    return {"message": "Hello world, this is a task tracker"}
+
+
 @app.post("/users/{user_id}/tasks/", response_model=schemas.Task)
 def create_task_for_user(user_id: int, item: schemas.TaskCreate, db: Session = Depends(get_db)):
     return crud.create_user_task(db=db, item=item, user_id=user_id)
