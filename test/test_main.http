@@ -5,7 +5,33 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:8000/hello/User
+GET http://127.0.0.1:8000/get_User
 Accept: application/json
 
 ###
+
+GET http://127.0.0.1:8000/get_user_by_email
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_users
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/create_user
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/get_tasks
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/create_user_task
+Accept: application/json
+
+###
+
