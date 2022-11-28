@@ -3,6 +3,14 @@
 ## Project Description
 In this project, I am developing an API that will act as the backend to the Task Tracker application. The API will be built using Python FastAPI and will have the following features: 
 
+## Testing the API
+The API can be tested using the following link.
+
+```bash
+http://127.0.0.1:8000/docs#/default
+```
+This will open the Swagger UI where you can test the API endpoints.
+
 ## Project Organisation
 
     ├── Makefile           <- Makefile with commands like `make requirements` (To be updated)
