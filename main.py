@@ -21,6 +21,11 @@ def get_db():
         db.close()
 
 
+@app.get("/")
+def hello_tracker():
+    return {"message": "Hello world, this is a task tracker"}
+
+
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user = crud.get_user_by_email(db, email=user.email)
@@ -41,11 +46,6 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
-
-
-@app.get("/")
-def hello_tracker():
-    return {"message": "Hello world, this is a task tracker"}
 
 
 @app.post("/users/{user_id}/tasks/", response_model=schemas.Task)
