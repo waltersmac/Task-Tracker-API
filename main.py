@@ -54,6 +54,6 @@ def create_task_for_user(user_id: int, item: schemas.TaskCreate, db: Session = D
 
 # Get tasks
 @app.get("/tasks/", response_model=List[schemas.Task])
-def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_tasks(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_tasks(db, skip=skip, limit=limit)
     return items
