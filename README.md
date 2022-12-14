@@ -16,7 +16,7 @@ This will open the Swagger UI where you can test the API endpoints.
     ├── Makefile           <- Makefile with commands like `make requirements` (To be updated)
     ├── README.md          <- The top-level README for developers using this project.
     ├── api                <- FastAPI application scripts (To be added)
-    ├── data               <- Hold the sqlite database
+    ├── data               <- Hold the sqlite database. This will be created when the API is run for the first time.
     ├── core               <- This holds the sql_db, models, schema and the crud scripts
     ├── models             <- Holds the data structures i.e linked list, stack, queue, binary tree, etc (To be added)
     │
