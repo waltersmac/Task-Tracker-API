@@ -23,11 +23,11 @@ def get_db():
 # App home route
 @app.get("/")
 def hello_tracker():
-    return {"message": "Hello world, this is a task tracker"}
+    return {"message": "Hello world, this is a task tracker api"}
 
 
 # Get create users
-@app.post("/users/", response_model=schemas.User)
+@app.post("/track-api/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user = crud.get_user_by_email(db, email=user.email)
     if db_user:
@@ -36,14 +36,14 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
 
 
 # Get users
-@app.get("/users/", response_model=List[schemas.User])
+@app.get("/track-api/users/", response_model=List[schemas.User])
 def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     users = crud.get_users(db, skip=skip, limit=limit)
     return users
 
 
 # Get user
-@app.get("/users/{user_id}", response_model=schemas.User)
+@app.get("/track-api/{user_id}", response_model=schemas.User)
 def read_user(user_id: int, db: Session = Depends(get_db)):
     db_user = crud.get_user(db, user_id=user_id)
     if db_user is None:
@@ -52,13 +52,13 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 
 
 # Create task for user
-@app.post("/users/{user_id}/tasks/", response_model=schemas.Task)
+@app.post("/track-api/users/{user_id}/tasks/", response_model=schemas.Task)
 def create_task_for_user(user_id: int, item: schemas.TaskCreate, db: Session = Depends(get_db)):
     return crud.create_user_task(db=db, item=item, user_id=user_id)
 
 
 # Get tasks
-@app.get("/tasks/", response_model=List[schemas.Task])
+@app.get("/track-api/tasks/", response_model=List[schemas.Task])
 def read_tasks(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_tasks(db, skip=skip, limit=limit)
     return items
