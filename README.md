@@ -9,7 +9,7 @@ The API can be tested using the following link.
 ```bash
 http://127.0.0.1:8000/docs#/default
 ```
-This will open the Swagger UI where you can test the API endpoints.
+This link will open the Swagger UI where you can test the API endpoints.
 
 ## Project Organisation
 
