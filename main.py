@@ -23,7 +23,7 @@ def get_db():
 # App home route
 @app.get("/")
 def hello_tracker():
-    return {"message": "Hello world, this is a task tracker api"}
+    return {"message": "Hello everyone, this is a task tracker api"}
 
 
 # Get create users
