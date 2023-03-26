@@ -3,6 +3,9 @@
 ## Project Description
 In this project, I am developing an API that will act as the backend to the Task Tracker application. The API will be built using Python FastAPI and will have the following features: 
 
+## Layout (To be completed)
+i.e. How the API will be structured
+
 ## Testing the API
 The API can be tested using the following link.
 
