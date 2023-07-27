@@ -1,4 +1,4 @@
-# Task Tracker API (Currently in development)
+# Task Tracker API (In development)
 
 ## Project Description
 In this project, I am developing an API that will act as the backend to the Task Tracker application. The API will be built using Python FastAPI and will have the following features: 
